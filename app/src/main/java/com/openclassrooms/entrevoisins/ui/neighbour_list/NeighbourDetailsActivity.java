@@ -54,19 +54,19 @@ public class NeighbourDetailsActivity extends AppCompatActivity {
         textNumber.setText(neighbour.getPhoneNumber());
         textSocial.setText("www.facebook.fr/" + neighbour.getName().toLowerCase());
         textAbout.setText(neighbour.getAboutMe());
-        isFavoris(neighbour);
+        isFavorite(neighbour);
 
         favButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mApiService.updateFavorites(neighbour);
-                isFavoris(neighbour);
+                isFavorite(neighbour);
             }
         });
     }
 
-    public void isFavoris(Neighbour neighbour) {
-        if(neighbour.isFavoris())
+    public void isFavorite(Neighbour neighbour) {
+        if(neighbour.getFavorite())
             favButton.setImageResource(R.drawable.ic_star_white_24dp);
         else
             favButton.setImageResource(R.drawable.ic_star_border_white_24dp);
