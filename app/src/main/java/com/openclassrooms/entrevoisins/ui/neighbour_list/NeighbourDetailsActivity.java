@@ -66,13 +66,10 @@ public class NeighbourDetailsActivity extends AppCompatActivity {
     }
 
     public void isFavoris(Neighbour neighbour) {
-        if(neighbour.isFavoris()) {
+        if(neighbour.isFavoris())
             favButton.setImageResource(R.drawable.ic_star_white_24dp);
-        }
-        else if (!neighbour.isFavoris()) {
+        else
             favButton.setImageResource(R.drawable.ic_star_border_white_24dp);
-        }
-
     }
 
 }
