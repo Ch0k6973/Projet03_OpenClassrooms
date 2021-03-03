@@ -7,3 +7,16 @@ Ce dépôt contient une mini-application pour le P3 du parcours **Grande École 
 - **Connectez** un appareil android à votre ordinateur ou lancez l'émulateur d'**Android Studio**.
 
 - **Lancez** l'application **Entrevoisins** en cliquant sur le bouton run d'**Android Studio**.
+
+# Techno utilisées
+
+* Tech-stack
+  * 100% JAVA
+* Architecture
+    * Approche TDD
+* Test
+    * JUnit 5
+    * Espresso
+* Class
+  * EventBus
+  * Parcelable
